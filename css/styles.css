@@ -152,7 +152,7 @@ PAGE: ABOUT
     display: block;
     max-width: 275px;
     margin: 0 auto 30px;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 .content {
@@ -166,11 +166,19 @@ PAGE: ABOUT
     padding: 10px;
 }
 
-#opener {
-    font-family: 'Raleway', sans-serif;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #lightgrey;
+button {
+    background-color: #191919;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button a {
+    color: white;
 }
 
 
@@ -222,22 +230,8 @@ PAGE: WORK
 }
 
 
-
 .button-align {
     text-align: center;
-}
-
-.sample-box-1 button {
-    background-color: #191919; /* Green */
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-.sample-box-1 button a {
-    color: white;
 }
 
 /**********************************
