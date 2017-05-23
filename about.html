@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jerry Hoglen | web developer |</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h3><a href="index.html">Jerry Hoglen <br><span>web developer</span></a></h3>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="mailto:jerryhoglen.webdev@gmail.com">Email Me</a></li>
+        </ul>
+    </header>
+    <div id="wrapper">
+        <section class="content">
+            <img src="img/jerryimage.jpg" alt="Photograph of Jerry Hoglen" class="profile-photo">
+            <h1>About me</h1>
+            <p>Web developer with a background in retail and business management. Passionate about building and problem solving. Inspired by creative teams that build great products and praise the success of the individuals around them.</p>
+            <p>If you'd like to follow me on twitter, my username is <a href="http://twitter.com/jerryhoglen">@jerryhoglen</a></p>
+            <h3>General Information</h3>
+            <p>I am currently looking for a position as a junior/front-end web developer. Please reach out via email or phone call if you are interested.</p>
+            <h3>Contact Details</h3>
+            <ul class="contact-info">
+                <li class="phone"><a href="tel:631-579-1319">631-579-1319</a></li>
+                <li class="mail"><a href="mailto:jerryhoglen.webdev@gmail.com">jerryhoglen.webdev@gmail.com</a></li>
+                <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=jerryhoglen">@jerryhoglen</a></li>
+            </ul>
+            <button id="opener">CV/Resume</button>
+            <div id="dialog">
+                <embed id="modal_embed" src="pdf/jhresume.pdf">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h4>&copy; 2017 Jerry Hoglen.</h4>
+    </footer>
+    <script>
+    $("#dialog").dialog({
+        autoOpen: false
+    });
+    $("#opener").click(function() {
+        $("#dialog").dialog("open");
+        $("#dialog").dialog("option", "width", 650);
+    });
+    $(function() {
+        $("#dialog").dialog();
+        $("#ui-dialog-title-dialog").hide();
+        $(".ui-dialog-titlebar").removeClass('ui-widget-header');
+    });
+    </script>
+</body>
+
+</html>

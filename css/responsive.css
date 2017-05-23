@@ -1,0 +1,21 @@
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .grid {
+    	max-width: 1180px;
+    	margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+    }
+
+    #work-samples {
+    	width: 100%;
+    	display: grid;
+    	grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        grid-column-gap: 10px;
+   		grid-row-gap: 5em;
+    }
+
+}
