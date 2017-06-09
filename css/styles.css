@@ -46,6 +46,9 @@ header h3 {
     display: inline-block;
     float: left;
 }
+header h3 a:hover {
+    color: #66A182;
+}
 header h3 span {
     font-size: .9em;
 }
@@ -55,15 +58,16 @@ header ul {
     list-style-type: none;
 }
 header ul li {
-    margin-left: 15px;
+    margin-left: 5px;
     margin-bottom: 2%;
     font-size: .90em;
+    display: inline-block;
 }
 header li a {
     color: #000;
 }
 header li a:hover {
-    color: #191919;
+    color: #66A182;
 }
 
 /**********************************
@@ -72,6 +76,7 @@ Intro Section
 #intro h2 {
     width: 90%;
     margin-left: 4%;
+    margin-top: 5%;
     font-weight: normal;
 }
 #intro p {
@@ -80,6 +85,7 @@ Intro Section
     width: 80%;
     color: #333333;
     margin-left: 10%;
+    margin-bottom: 5%;
 }
 
 /**********************************
